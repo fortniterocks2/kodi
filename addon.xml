@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.test" name="Best addon" version="0.0.1" provider-name="Frank">
+<addon id="script.module.routing" name="Plugin routing" version="0.2.3" provider-name="takoi">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-
-
+        <import addon="xbmc.python" version="2.14.0"/>
     </requires>
-    <extension point="xbmc.python.script" library="main.py">
-        <provides>executable</provides>
-    </extension>
+    <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Everything</summary>
-        <description lang="en_GB"></description>
-        <language></language>
+        <summary lang="en_GB">Routing module for plugins</summary>
+        <description lang="en_GB">Library for building and parsing plugin URLs.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <platform>all</platform>
-        <license>MIT</license>
-        <forum></forum>
-        <website>https://netmahairline.neocities.org/</website>
-        <email>frankiericcardi80@gmail.com</email>
-        <source></source>
-        <news></news>
-        <disclaimer></disclaimer>
+        <language>en_GB</language>
+        <source>https://github.com/tamland/kodi-plugin-routing</source>
         <assets>
             <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
